@@ -9,7 +9,7 @@ export function setAuthToken(token) {
 }
 
 const api = axios.create({
-  baseURL: `${process.env.REACT_APP_API_BASE_URL}/api`
+  baseURL: 'https://blog-spot-navy-delta.vercel.app/api'
 });
 
 api.interceptors.request.use((config) => {
